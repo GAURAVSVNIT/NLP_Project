@@ -1,0 +1,62 @@
+Loading base model for zero-shot baseline...
+=== zero-shot on grammar_drill (20 examples) ===
+  8/20
+  16/20
+  20/20
+zero-shot grammar_drill: BLEU=1.03 chrF++=12.20
+=== zero-shot on agama_gold (4 examples) ===
+  4/4
+zero-shot agama_gold: BLEU=0.63 chrF++=12.12
+=== zero-shot on sattasai_synthetic (100 examples) ===
+  8/100
+  16/100
+  24/100
+  32/100
+  40/100
+  48/100
+  56/100
+  64/100
+  72/100
+  80/100
+  88/100
+  96/100
+  100/100
+zero-shot sattasai_synthetic: BLEU=0.59 chrF++=10.79
+=== zero-shot on vajjalagga_heldout (20 examples) ===
+  8/20
+  16/20
+  20/20
+zero-shot vajjalagga_heldout: BLEU=0.35 chrF++=9.49
+Loading LoRA fine-tuned model (domain mix)...
+=== fine-tuned on grammar_drill (20 examples) ===
+  8/20
+  16/20
+  20/20
+fine-tuned grammar_drill: BLEU=3.71 chrF++=20.37
+=== fine-tuned on agama_gold (4 examples) ===
+  4/4
+fine-tuned agama_gold: BLEU=0.28 chrF++=9.66
+=== fine-tuned on sattasai_synthetic (100 examples) ===
+  8/100
+  16/100
+  24/100
+  32/100
+  40/100
+  48/100
+  56/100
+  64/100
+  72/100
+  80/100
+  88/100
+  96/100
+  100/100
+fine-tuned sattasai_synthetic: BLEU=0.63 chrF++=9.89
+=== fine-tuned on vajjalagga_heldout (20 examples) ===
+  8/20
+  16/20
+  20/20
+fine-tuned vajjalagga_heldout: BLEU=0.24 chrF++=9.64
+Wrote experiments/007_grammar_drill_only/eval_results_grammar_drill.txt
+Wrote experiments/007_grammar_drill_only/eval_results_agama_gold.txt
+Wrote experiments/007_grammar_drill_only/eval_results_sattasai_synthetic.txt
+Wrote experiments/007_grammar_drill_only/eval_results_vajjalagga_heldout.txt

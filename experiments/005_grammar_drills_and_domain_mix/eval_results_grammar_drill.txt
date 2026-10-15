@@ -1,0 +1,80 @@
+Test set: data/prakrit_hindi_drill_test.tsv (20 examples)
+Zero-shot baseline: BLEU=1.03 chrF++=12.20
+LoRA fine-tuned (domain mix): BLEU=5.06 chrF++=25.15
+
+Sample comparisons:
+
+[0] Prakrit:    सो लुक्किहिइ।
+    Hindi ref:  वह छिपगे ा।
+    Zero-shot:  तो इसे छिपाएँ।
+    Fine-tuned: वह छिपा हुआ है।
+
+[1] Prakrit:    इमे पडन्तु।
+    Hindi ref:  ये सब गिरें।
+    Zero-shot:  इस पर गिरें।
+    Fine-tuned: इस पर गिरें।
+
+[2] Prakrit:    इमे अत्थ सयीअ।
+    Hindi ref:  ये दाने ांे यहाँ साये े।
+    Zero-shot:  यह इस पर निर्भर करता है।
+    Fine-tuned: यह सब यहाँ सायेगा।
+
+[3] Prakrit:    सासणं पसरिहिइ।
+    Hindi ref:  शासन फैलेगा।
+    Zero-shot:  सिंहासन फैलाएँ।
+    Fine-tuned: सास फैलती है।
+
+[4] Prakrit:    तुम्हे अत्थ लुक्कीअ।
+    Hindi ref:  तुम दोनांे यहां छिप।े
+    Zero-shot:  आपको बस इतना ही छिपाना है।
+    Fine-tuned: तुम वहाँ छिपे हो।
+
+[5] Prakrit:    अम्हे उल्लसमो।
+    Hindi ref:  हम दाने ांे खुश होवें।
+    Zero-shot:  अरे यार, बहुत मज़ा आ रहा है।
+    Fine-tuned: हम सब खुश हैं।
+
+[6] Prakrit:    किसणाणि अच्छीणि सोहन्ति।
+    Hindi ref:  काली आँखे शोभती हैं।
+    Zero-shot:  किसान अच्छे होते हैं।
+    Fine-tuned: किसान अच्छा सोते हैं।
+
+[7] Prakrit:    निब्बला सेवआ डरन्ति।
+    Hindi ref:  निर्बल सवे क डरते है।
+    Zero-shot:  निब्बला सेवाएँ डरती हैं।
+    Fine-tuned: निब्बल सेवकों को भय होता है।
+
+[8] Prakrit:    1
+    Hindi ref:  तुम कहाँ मूच्र्छित हुए।
+    Zero-shot:  1.
+    Fine-tuned: 1
+
+[9] Prakrit:    भिक्खुणो पइदिणं घुमन्ति।
+    Hindi ref:  भिक्षु प्रतिदिन घूमतें हंै।
+    Zero-shot:  भिक्षु हर दिन घूमते हैं।
+    Fine-tuned: भिक्षु प्रतिदिन घूमते हैं।
+
+[10] Prakrit:    रज्जूओ तुट्ठिहिन्ति।
+    Hindi ref:  रस्सियाँ टूटगें ी।
+    Zero-shot:  रस्सियों को तोड़-मरोड़ कर पेश किया जाता है।
+    Fine-tuned: रज्जुओं को तोड़ कर नष्ट कर दिया जाता है।
+
+[11] Prakrit:    भयं णस्सउ।
+    Hindi ref:  भय नष्ट हो।
+    Zero-shot:  डरो मत।
+    Fine-tuned: भय नष्ट हो जाता है।
+
+[12] Prakrit:    नरिंदो रमइ।
+    Hindi ref:  राजा रमण करता है।
+    Zero-shot:  नरिंदो रमी।
+    Fine-tuned: नारिंडु आनन्द करता है।
+
+[13] Prakrit:    तुमं पडिक्कमिऊण उल्लससि।
+    Hindi ref:  तुम प्रतिक्रमण कर खुश होते हो।
+    Zero-shot:  आप खुश हो जाएँगे।
+    Fine-tuned: तुम नीचे गिरकर खुश होते हो।
+
+[14] Prakrit:    वणं सोहइ।
+    Hindi ref:  वन शाभ्े ाता है।
+    Zero-shot:  वन सोहई।
+    Fine-tuned: वन सुख देता है।

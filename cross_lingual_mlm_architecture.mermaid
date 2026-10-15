@@ -1,0 +1,96 @@
+flowchart TD
+    %% ========== 1. DATA LAYER ==========
+    subgraph DATA["1 - Data Collection"]
+        S1["IndicCorp v2<br/>monolingual"]
+        S2["Wikipedia dumps"]
+        S3["CC-100 / OSCAR<br/>web crawl"]
+        S4["Samanantar<br/>parallel En-Indic"]
+    end
+
+    subgraph CLEAN["2 - Preprocessing Pipeline"]
+        C1["Unicode NFC +<br/>script normalization<br/>IndicNLP"]
+        C2["Language ID filter<br/>IndicLID / fastText"]
+        C3["Near-duplicate removal<br/>MinHash LSH"]
+        C4["Quality filters<br/>length, symbol ratio, boilerplate"]
+        C5["Optional: transliterate<br/>to shared script"]
+        C1 --> C2 --> C3 --> C4 --> C5
+    end
+
+    S1 & S2 & S3 --> C1
+    S4 --> P1["Sentence-aligned<br/>parallel pairs"]
+
+    C5 --> M1["Clean monolingual corpora<br/>per language"]
+
+    %% ========== 2. SAMPLING + TOKENIZER ==========
+    subgraph TOK["3 - Tokenizer"]
+        T1["Temperature sampling<br/>p_i proportional to n_i ^ 0.3<br/>upsample low-resource"]
+        T2["SentencePiece Unigram<br/>shared vocab ~64k"]
+        T3["Tokenizer eval<br/>fertility, UNK rate per language"]
+        T1 --> T2 --> T3
+    end
+
+    M1 --> T1
+
+    %% ========== 3. DATA LOADING ==========
+    subgraph LOAD["4 - Training Data Builder"]
+        L1["Tokenize + pack<br/>512-token sequences"]
+        L2["MLM masking<br/>15 pct: 80 MASK / 10 random / 10 keep"]
+        L3["TLM pairs<br/>concat src + tgt, mask both"]
+        L4["Multilingual batch sampler<br/>language-balanced"]
+        L1 --> L2 --> L4
+        L3 --> L4
+    end
+
+    T2 --> L1
+    P1 --> L3
+    T2 --> L3
+
+    %% ========== 4. MODEL ==========
+    subgraph MODEL["5 - Model: Transformer Encoder"]
+        E1["Token embedding"]
+        E2["Position embedding"]
+        E3["Language embedding"]
+        SUM(("+"))
+        ENC["N x Encoder blocks<br/>Multi-head self-attention<br/>+ FFN + LayerNorm<br/>e.g. 6-12 layers, d=512-768"]
+        HEAD["MLM head<br/>tied with token embedding"]
+        E1 & E2 & E3 --> SUM --> ENC --> HEAD
+    end
+
+    L4 --> E1
+
+    %% ========== 5. TRAINING ==========
+    subgraph TRAIN["6 - Pre-training Loop"]
+        TR1["Cross-entropy loss<br/>MLM + TLM"]
+        TR2["AdamW + linear warmup<br/>+ decay"]
+        TR3["Mixed precision fp16<br/>gradient accumulation"]
+        TR4["Checkpointing"]
+        TR5["Logging<br/>W&B / TensorBoard"]
+        TR1 --> TR2 --> TR3 --> TR4
+        TR1 --> TR5
+    end
+
+    HEAD --> TR1
+    TR3 -. "update weights" .-> ENC
+
+    %% ========== 6. EVALUATION ==========
+    subgraph EVAL["7 - Evaluation"]
+        V1["Intrinsic<br/>MLM accuracy, pseudo-perplexity<br/>per language"]
+        V2["Downstream fine-tuning<br/>IndicXTREME / IndicGLUE<br/>NER, NLI, classification"]
+        V3["Zero-shot cross-lingual transfer<br/>train on Hindi, test on low-resource"]
+        V4["Alignment test<br/>FLORES sentence retrieval"]
+        V5["Baselines<br/>mBERT, XLM-R, IndicBERT, MuRIL"]
+        V6["Ablations<br/>with/without TLM, sampling temp,<br/>vocab size, transliteration"]
+    end
+
+    TR4 --> V1 & V2 & V3 & V4
+    V5 --> CMP["Results comparison<br/>tables + plots"]
+    V1 & V2 & V3 & V4 & V6 --> CMP
+
+    %% ========== 7. DEPLOY ==========
+    subgraph DEPLOY["8 - Release + Demo"]
+        D1["Export to HF format<br/>push to HF Hub"]
+        D2["Gradio demo<br/>fill-mask + embedding similarity"]
+        D1 --> D2
+    end
+
+    TR4 --> D1

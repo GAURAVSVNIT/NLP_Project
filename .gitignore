@@ -1,0 +1,11 @@
+# Python virtualenv and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Model weights and HuggingFace caches (multi-GB; not for git)
+models/
+**/.cache/
+
+# Local Claude Code settings
+.claude/

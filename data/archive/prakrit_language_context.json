@@ -1,0 +1,62 @@
+{
+  "title": "Prakrit Language: Historical and Linguistic Context",
+  "description": "Comprehensive background on the Prakrit language family, its origins, its relationship to Sanskrit and modern Indian languages, and the Jain literary tradition — compiled from verified scholarly sources for the PrakritNLP dataset.",
+  "sections": [
+    {
+      "section": "1. What is Prakrit?",
+      "content": "Prakrit (prākṛta, meaning 'natural' or 'original') refers to a group of Middle Indo-Aryan languages that developed from Old Indo-Aryan (Vedic Sanskrit) and evolved into the modern Indo-Aryan languages (Hindi, Marathi, Bengali, Gujarati, etc.). The term contrasts with 'saṃskṛta' (refined/perfected), suggesting Prakrit was the natural, colloquial form of speech while Sanskrit was the literary standard. Prakrits flourished from approximately 600 BCE to 1200 CE across the Indian subcontinent."
+    },
+    {
+      "section": "2. Major Prakrit Variants",
+      "content": "The major Prakrit languages include: (1) Ardhamagadhi ('half-Magadhi') — the liturgical language of Svetambara Jain scriptures, spoken in the Magadha region (modern Bihar/eastern UP). (2) Maharashtri — the prestige literary Prakrit, used extensively in poetry and drama, ancestor of Marathi and Konkani. (3) Shauraseni — the standard dramatic Prakrit for prose dialogue, spoken in the Mathura/Shurasena region, ancestor of Hindi, Urdu, and Punjabi. (4) Magadhi — eastern variant, ancestor of Bengali, Assamese, Odia, and Bihari languages. (5) Paishachi — the 'demonic' Prakrit, used in narrative literature, possibly ancestral to some Dardic languages. (6) Apabhramsha — the 'fallen/corrupted' late-stage Prakrit that directly transitioned into modern Indo-Aryan languages.",
+      "language_family_tree": {
+        "Old_Indo_Aryan": "Vedic Sanskrit → Classical Sanskrit",
+        "Middle_Indo_Aryan": "Ardhamagadhi, Maharashtri, Shauraseni, Magadhi, Paishachi → Apabhramsha",
+        "New_Indo_Aryan": "Hindi, Marathi, Bengali, Gujarati, Punjabi, Odia, etc."
+      }
+    },
+    {
+      "section": "3. Ardhamagadhi Prakrit — The Language of Jain Agamas",
+      "content": "Ardhamagadhi is of paramount importance in Jain studies. It is the language in which the 24th Tirthankara Bhagwan Mahavira (599-527 BCE) preached his sermons, and in which the entire Svetambara Jain canonical literature (45 Agama texts) was composed and orally transmitted for centuries before being committed to writing at the Council of Valabhi (454-466 CE) in Gujarat. The name 'Ardhamagadhi' means 'half-Magadhi', indicating it was linguistically transitional between the western Shauraseni and eastern Magadhi Prakrits. Its modern descendants are the Eastern Hindi languages: Awadhi, Bagheli, and Chhattisgarhi."
+    },
+    {
+      "section": "4. Prakrit and Jainism — An Inseparable Bond",
+      "content": "Jainism's relationship with Prakrit is unique among Indian religions. While Buddhism eventually adopted Sanskrit (and Pali for the Theravada canon), and Hinduism maintained Sanskrit as its sacred language, Jainism preserved its most sacred texts in Prakrit across millennia. The Jain literary tradition spans multiple Prakrits: Ardhamagadhi for the Svetambara Agamas, Shauraseni (Jain Shauraseni) for Digambara philosophical works by Acharya Kundakunda and others, and Maharashtri for narrative and poetic works. This makes Jain literature the single largest repository of Prakrit texts in existence."
+    },
+    {
+      "section": "5. The Jain Agama Canon — 45 Sacred Texts",
+      "content": "The Svetambara Jain canon comprises 45 texts (with the 12th Anga, Drishtivada, now lost): 12 Angas (primary limbs), 12 Upangas (secondary limbs), 6 Chedasutras (monastic conduct), 4 Mulasutras (foundational texts), 2 Culikasutras (appendices), and 10 Prakirnakas (miscellaneous texts). All are in Ardhamagadhi Prakrit. The Digambara tradition holds that the original Agamas were lost by the 2nd century CE and instead follows the Shatkhandagama, Kasayapahuda, and works of Kundakunda. The most universally revered Jain text, the Tattvartha Sutra by Acharya Umasvati, is the only text accepted by both traditions — notably written in Sanskrit, not Prakrit."
+    },
+    {
+      "section": "6. The Terapanth Agama Translation Project — A 60-Year Scholarly Endeavor",
+      "content": "In 1955, Acharya Tulsi (1914-1997), the 9th head of the Jain Svetambara Terapanth order, initiated an unprecedented systematic project to research, critically edit, translate, and annotate the entire Jain Agama canon from Ardhamagadhi Prakrit. His disciple Muni Nathmal (later Acharya Mahapragya, 1920-2010) served as editorial director. The project, based at Jain Vishva Bharati Institute in Ladnun, Rajasthan, took nearly 60 years and produced multiple publication series: (1) Agam-Sutra Granthamala — critical editions of original Prakrit texts in 7 volumes covering 32 Agamic texts with variant readings and word indices. (2) Agam-Anusandhan Granthamala — tripartite parallel texts with original Prakrit, Sanskrit chaya (shadow translation), and Hindi translation with critical notes. (3) Agam Hindi Anuvad Granthamala — accessible Hindi translations. (4) Agam-Katha and Vargikrit-Agam Granthamala — thematic compilations. Acharya Mahapragya authored over 300 books including the monumental 'Acharanga Bhasyam' (4-way parallel: Prakrit | Roman transliteration | Sanskrit | English) and 'Prakrit Vakyarachna Bodh' (592 pages, 1,114 Prakrit grammar rules). The current head, Acharya Mahashraman (born 1962), continues the editorial and publication work.",
+      "key_figures": [
+        {"name": "Acharya Tulsi", "years": "1914-1997", "role": "Initiated the Agama project in 1955"},
+        {"name": "Acharya Mahapragya", "years": "1920-2010", "role": "Editorial director, authored 300+ books including Acharanga Bhasyam and Prakrit grammar"},
+        {"name": "Acharya Mahashraman", "years": "1962-present", "role": "Current head, continuing Agama publication work"}
+      ],
+      "institution": "Jain Vishva Bharati Institute, Ladnun, Rajasthan"
+    },
+    {
+      "section": "7. Key Prakrit Grammarians",
+      "content": "The formal study of Prakrit grammar was established by classical Indian scholars: (1) Vararuchi (c. 3rd-5th century CE) authored the Prakrtaprakasha, the oldest surviving Prakrit grammar, covering Maharashtri, Shauraseni, Magadhi, Ardhamagadhi, and Paishachi with systematic rules for deriving Prakrit forms from Sanskrit. (2) Hemachandra Acharya (1089-1172 CE), the great Jain polymath from Gujarat, included a comprehensive Prakrit grammar in Book 8 of his Siddha-Hema-Shabdanushasana, covering six Prakrit varieties plus Apabhramsha. He also compiled the Desinamaala, a lexicon of indigenous Prakrit words not derived from Sanskrit. (3) Trivikrama further developed the grammatical tradition. These grammars document the systematic rules by which Sanskrit transforms into Prakrit — rules that remain the foundation for understanding Prakrit today."
+    },
+    {
+      "section": "8. Prakrit in Modern Times",
+      "content": "Prakrit is no longer spoken as a living language but remains actively studied in Indian universities (Jain Vishva Bharati, Shravanabelagola's NIPSAR, KJ Somaiya Institute, Parshwanath Vidyapeeth) and international institutions (ISJS Pune, University of Chicago under Prof. Andrew Ollett — Infosys Prize 2025 laureate). The Prakrit Bharati Academy in Jaipur has published over 335 works. Despite this scholarly activity, Prakrit has ZERO computational/NLP resources: no machine translation, no morphological analyzer, no tokenizer, no language model, and no structured NLP dataset — until this dataset."
+    },
+    {
+      "section": "9. Computational Linguistics State of Art",
+      "content": "As of 2026, the only published work on Prakrit NLP is Dalal et al. (2024) 'AI-Tutor: Interactive Learning of Ancient Knowledge from Low-Resource Languages' (WAT 2024, EMNLP), which achieved BLEU scores of 14.9 (Ardhamagadhi→Hindi) and 17.8 (Ardhamagadhi→English) using transfer learning from Sanskrit via IndicTrans2 with only ~11,000 parallel sentences. A second paper on Maharashtri Prakrit MT (2025) achieved BLEU 15.34 using M2M100. No morphological analyzer, POS tagger, or dedicated language model exists for any Prakrit variant. This dataset aims to be the foundational resource that enables such tools."
+    }
+  ],
+  "sources": [
+    "Ardhamagadhi Prakrit — Wikipedia",
+    "Jain Agamas — Jainpedia, Jainworld, JainGPT",
+    "Hemachandra — Wikipedia, prakrit_lexicons repo (CC BY-SA 4.0)",
+    "Acharya Tulsi, Mahapragya, Mahashraman — Wikipedia, JVB publications",
+    "Dalal et al. (2024) — ACL Anthology, WAT 2024",
+    "Andrew Ollett — University of Chicago SALC, prakrit_texts repo",
+    "ISJS — International School for Jain Studies, Pune"
+  ]
+}

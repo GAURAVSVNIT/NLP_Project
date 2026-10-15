@@ -1,0 +1,80 @@
+Test set: data/100_test_pra.txt + 100_test_eng.txt (100 examples)
+Zero-shot baseline: BLEU=2.14 chrF++=13.76
+LoRA fine-tuned:    BLEU=9.81 chrF++=25.30
+
+Sample comparisons (first 15):
+
+[0] Prakrit:    पणअकुविआण दोण्ह वि अलिअपसुत्ताण माणइल्लाण,णिच्चलणिरुद्धणीसासदिण्णअण्णाण को मल्लो
+    English ref: After the quarrel neither give in But feigning sleep, lie still, Hold their breath and listen. Who will win the bout?
+    Zero-shot:   But if you don't agree with both of them, then you're doing the wrong thing.
+    Fine-tuned:  But if you do not take care of yourself, you will not be able to enjoy the pleasures of life, And if you are not careful, you may lose your senses.
+
+[1] Prakrit:    तुज्झ वसइ त्ति हिअअं इमेहि दिट्ठो तुमं ति अच्छीइं,तुह विरहे किसिआइ ति तीए अंगाइ वि पिआइं
+    English ref: She cherishes her heart Because you live in it, Her eyes Because with them she can gaze at you, Even her body Because it grows thin in your absence.
+    Zero-shot:   It's up to you to tell me that you're good, that you don't have anything to complain about.
+    Fine-tuned:  Look at your face, It's so nice to look at you, You're so beautiful That you can't even touch your body.
+
+[2] Prakrit:    विरहाणलो सहिज्जइ आसावंधेण वल्लहजणस्स,एक्कग्गामपवासो माए मरणं विसेसेइ
+    English ref: Hope helps one bear The burning fire of separation From the man one loves. But, mother, when the man one loves Lives in the same village yet keeps away, That is worse than death.
+    Zero-shot:   Virahanlo sahajjayi asavandhen vallahajanas, ekkaggamapavaso ma maryudaiseyi.
+    Fine-tuned:  In the absence of love and affection, in the face of death, one person is bound to die.
+
+[3] Prakrit:    अज्जं चेअ पउत्थो उज्जागरओ जणस्स अज्जेअ,अज्जेअ हलिद्दापिंजराइ गोलाइ तूहाइं
+    English ref: Only today he departed, And today his women stay up late Dyeing the banks of the Goda Yellow with turmeric soap.
+    Zero-shot:   Ajjaon Chea Potho Ujagaro Janas Ajja, Ajjaa Haliddapinjarai Golai Tuhaiyan
+    Fine-tuned:  The sun shines brightly on the young man's face Today, As if he had been born alive, And as if he were pregnant, He shoots at you With a round arrow.
+
+[4] Prakrit:    उअरिदरडिट्ठखण्णुअणिलुक्कपारावआण विरुएहिं,णित्थणइ जाअविअणं सूलाहिण्णं व देवउलं
+    English ref: With cooing doves hidden high up among the rafters The temple groans like a man suffering from cramp.
+    Zero-shot:   Uriraditkhunnu and Ilukkaparao and vice versa, Tithanai, Soolahinna and Devula.
+    Fine-tuned:  Looking down at the sight of her husband's face, She turned her face away from him, As if she had been blinded by the sun's rays.
+
+[5] Prakrit:    उअ पोम्मराअमरगअसंवलिआ णहअलाउ ओअरइ,णहसिरिकंठब्भट्ठ व्व कंठिआ कीररिंछोली
+    English ref: Look! A flock of parrots falling from the sky Like a necklace of rubies and emeralds Slipping from the throat of Sri in heaven.
+    Zero-shot:   O pommeraamargasavalia nahalu orai, nahasirikanthabhatta and gathia ki cholli.
+    Fine-tuned:  The woman's face was full of tears, The man's eyes glittered with tears, And her lips clung to her breasts.
+
+[6] Prakrit:    सव्वत्थ दिसामुहपसरिएहि अण्णोण्णकडअलग्गेहिं,छल्लिं व मुअइ विंझो मेहेहि विसंघडंतेहिं
+    English ref: With clouds torn to shreds And dispersed in all directions —A few still sticking to its slopes— The Vindhya Range seems to shed its skin.
+    Zero-shot:   On the seventh day, there is a great confusion among the blind, the lame, and the dumb.
+    Fine-tuned:  As the whole world passes by, The blind man's eyes glisten at the sight of his wife's breasts, And my heart skips a beat.
+
+[7] Prakrit:    हासाविओ जणो सामलीअ पढमं पसूअमाणाए,वल्लहवाएण अलं मम त्ति वहुसो भणंतीए
+    English ref: The attractive wife, Who had just given birth for the first time, Made everyone laugh When she kept on saying that she had had enough Of being called her husband's favorite.
+    Zero-shot:   If you want to learn how to read aloud, don't forget to listen to what I have to say.
+    Fine-tuned:  Laughing at the sight of her husband's face, The woman's eyes glittered with tears As she read the poem.
+
+[8] Prakrit:    तुह मुहसारिच्छं ण लहइ त्ति संपुण्णमंडलो विहिणा,अण्णमअं व घडेउं पुणो वि खंडिज्जइ मिअंको
+    English ref: Every time the moon is full The Creator takes it apart again To refashion it in such a way That it might match your face.
+    Zero-shot:   Wish you all the best for Vishu, Annamalai and Ghadei Pune v / s Khandijai.
+    Fine-tuned:  Don't look at me With your mouth full of tears, My dear, The whole world is full of you And I'm so happy to see you again.
+
+[9] Prakrit:    वालअ तुमाहि अहिअं णिअअं चिअ वल्लहं महं जीअं,तं तइ विणा ण होइ त्ति तेण कुविअं पसाएमि
+    English ref: You fool, My own life means more to me than you do. Therefore, if I give in to your anger It is only because without you I have no life.
+    Zero-shot:   If you're not here, I'll tell you what to do.
+    Fine-tuned:  If you don't tell me how much you mean, I won't let you go. I'll never forgive you.
+
+[10] Prakrit:    एक्केक्कमवइवेढणविवरंतरदिण्णतरलणअणाए,तइ वोलंते वालअ पंजरसउणाइअं तीए
+    English ref: Like a bird in a cage Moving from one gap to the next, With trembling eye She peeps through the fence As you walk past.
+    Zero-shot:   In addition to the perfect fuel economy, you'll also want to have a water cage.
+    Fine-tuned:  When you look at her face, That's the only way she knows how to get away from her husband's clutches.
+
+[11] Prakrit:    तइ वोलंते वालअ तिस्सा अंगाइ तह णु वलिआइं,जह पुट्ठिमज्झणिवडंतवाहधाराउ दीसंति
+    English ref: To watch you As you walked away She twisted round so far The tears could be seen Streaming down her back.
+    Zero-shot:   Thou hast brought to thee, O Volante, the third limb, where the Son of Man came in the stream of water.
+    Fine-tuned:  You are the only one who knows how to move your body, That is, how to stretch out your arms, That's how you feel when you look at the stream of water flowing through your mouth.
+
+[12] Prakrit:    गअकलहकुंभसंणिहघणपीणणिरंतरेहि तुंगेहिं,गूससिउं पि ण तीरइ किं पुण गंतुं हअथणेहिं
+    English ref: With those damned breasts Like the two bumps on a young elephant's forehead, Firm, full and prominent, pressing against each other, She can hardly breathe Let alone move
+    Zero-shot:   You will not be able to go to the Kumbh Mela, you will have to go back and see if there is a destination.
+    Fine-tuned:  How long will you be silent? Why don't you look at your wife's face When she's so angry With you That you can't stop laughing?
+
+[13] Prakrit:    तावम् अवणेइ ण तहा चंदणपंको वि कामिमिहुणाणं,जह दूसहे वि गिम्हे अण्णोण्णालिंगणसुहेल्ली
+    English ref: Sandal paste does not work as well As the wild delight of a tight embrace, Which, even on the hottest summer day, Succeeds in allaying a couple's fever.
+    Zero-shot:   Tavam Avane Tha Chandanapanko V Kamimiyunna, which is also known as Gimha Anonalingan Suhaili.
+    Fine-tuned:  Don't look at me, my dear, But look at you. You don't know how to make love to a peacock. You can't help but laugh at the sight of your eyes glistening with tears.
+
+[14] Prakrit:    जं जं पिहुलं अंगं तं तं जाअं किसोअरि किसं ते,जं तं तणुअं तं तं पि णिट्ठिअं किं थ माणेण
+    English ref: Slender girl, The parts of your body that used to be plump Have become thin, And those that were thin Are now tiny. What is the use of keeping so aloof?
+    Zero-shot:   Wherever you are the first member, go and enjoy what you have.
+    Fine-tuned:  Whoever is the last member of the family, Who knows what he is, Who sees him, Who follows him, What does he enjoy?

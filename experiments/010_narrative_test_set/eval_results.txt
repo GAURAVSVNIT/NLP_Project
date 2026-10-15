@@ -1,0 +1,5 @@
+test: data\prakrit_hindi_narrative_test.tsv (47 pairs), exact overlap with training sources: 0
+
+zero_shot: BLEU=0.75 chrF++=13.69
+domain_mix_v5: BLEU=0.66 chrF++=14.92
+drill_only_v6: BLEU=0.69 chrF++=12.73
